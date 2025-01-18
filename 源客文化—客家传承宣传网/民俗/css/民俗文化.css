@@ -1,0 +1,156 @@
+body{
+    /* background-color: antiquewhite; */
+    background-image: url(./2/背景6.jpg);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.title{
+    width: 1200px;
+    font-size: 50px;
+    font-style: italic;
+    font-family: 正楷;
+    color: rgb(154, 123, 123);
+    background-color: rgb(255,255,255,0.8);
+}
+.nav{
+    width: 1200px;
+}
+.nav li{
+    float: left;
+    list-style: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    
+    background-color: rgb(220, 212, 212);
+}
+.nav ul li:hover{
+    background-color: rgb(189, 186, 186);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav ul a:hover{
+    border-bottom: 2px solid #68370c;
+}
+.top{
+    width: 1200px;
+    height: 590px;
+    margin: 0 auto;
+}
+.top img{
+    width: 1200px;
+    height: 550px;
+}
+.content{
+    width: 1200px;
+    height: 400px;
+    margin-top: 20px;
+    background-color: rgb(255,255,255,0.8);
+}
+.content_left{
+    width: 600px;
+    height: 400px;
+    float: left;
+    margin-left: 20px;
+}
+.content_left img{
+    width: 580px;
+    height: 350px;
+    padding-top: 50px;
+}
+.content_left img:hover{
+    transform:scale(1.2);
+}
+.content_right{
+    width: 530px;
+    height: 400px;
+    float: right;
+    margin-right: 50px;
+}
+.content_right h1{
+    text-indent: 1em;
+    margin-top: 45px;
+}
+.content_right .font{
+    font-size: 18px;
+    margin-left: 15px;
+    text-indent: 2em;
+    letter-spacing: 1px;
+}
+.content2{
+    margin-top: 20px;
+    width: 1200px;
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: rgb(255,255,255,0.8);
+}
+.on{
+    width: 1200px;
+    height: 250px;
+    margin-top: 10px;
+}
+
+.four{
+    border-radius:50%;
+    overflow:hidden;
+    width: 250px;
+    height: 250px;
+    margin:0 20px;
+    float: left;
+}
+.four img{
+    width: 250px;
+    height: 250px;
+    width:100%;
+    height:auto;
+}
+.four img:hover{
+    transform:scale(1.2);
+}
+.bottom{
+    width: 1200px;
+    height: 400px;
+    margin-top: 10px;
+}
+#wenzi{
+    width: 250px;
+    height: 400px;
+    float: left;
+}
+.font{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 10px;
+    text-indent:2em;
+}
+#wenzi h1{
+    text-align: center;
+}
+.hunjia{
+    margin-left: 10px;
+}
+.zuoke{
+    margin-left: 50px;
+}
+.chunjieshangdeng{
+    margin-left: 40px;
+}
+.zhuilong{
+    margin-left: 40px;
+}
+.dibu{
+    text-align: center;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    background-color: rgb(212, 193, 166);
+    background-color: rgb(255,255,255,0.5);
+}

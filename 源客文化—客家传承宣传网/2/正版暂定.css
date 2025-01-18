@@ -1,0 +1,234 @@
+* {
+    /*全局选择器*/
+    margin: 0px;
+    padding: 0px;
+    
+    box-sizing:border-box;
+    list-style:none;
+    text-decoration: none;
+}
+ 
+
+ 
+body {
+    background-image: url(./背景图7.jpg);
+    background-color:rgb(255, 255, 255,0.9)
+}
+.zhuti {
+    /*主体*/
+    margin: 10px 150px 0px 150px;
+    
+}
+#zhutileft {
+    /*主体左边设置*/
+    width: 50%;
+    height: 400px;
+    background-color: aquamarine;
+    float: left;
+    overflow: hidden;
+    /*隐藏*/
+    border-radius: 5px;
+    /*弧度*/
+ 
+}
+ 
+#photo {
+    /*动画设置图片*/
+    display: block;
+    width: 3045px;
+    height: 400px;
+    animation: bj 8s linear infinite;
+    /*动画*/
+}
+ 
+#photo img {
+    /*图片设置*/
+    float: left;
+    width: 609px;
+    height: 100%;
+    padding: 0px 0px 0px 0px;
+}
+ 
+/*轮播图动画*/
+@keyframes bj {
+ 
+    0%,
+    20% {
+        margin-left: 0px;
+    }
+ 
+    25%,
+    40% {
+        margin-left: -609px;
+    }
+ 
+    45%,
+    60% {
+        margin-left: -1218px;
+    }
+ 
+    65%,
+    80% {
+        margin-left: -1827px;
+    }
+ 
+    85%,
+    100% {
+        margin-left: -2436px;
+    }
+}
+ 
+ 
+
+
+#shiming {
+    float: left;
+    clear: both;
+    /*浮动清除*/
+    margin-top: 30px;
+    background-color: #e3e0e0;
+    padding: 15px;
+    border-color: rgb(75, 99, 153);
+    border-style: dashed;
+    /*虚线 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(196 243 248);
+}
+ 
+#shiming img {
+    /*市名图片*/
+    border-radius: 5%;
+    /*边框弧度*/
+    width: 150px;
+    height: 150px;
+    float: left;
+    /*左浮动*/
+    margin: 5px 10px 0px 5px;
+}
+ 
+#shiming img:hover {
+    /*图片划过时*/
+    transform: scale(1.2);
+    /*图片放大*/
+}
+#shiming h3{
+    opacity: 0.9;
+}
+#shiming p {
+    /*市名文本设置*/
+    letter-spacing: 2px;
+    /*字体间隔*/
+    text-indent: 2em;
+    opacity: 0.7;
+}
+#shiming2 {
+    float: left;
+    clear: both;
+    /*浮动清除*/
+    margin-top: 30px;
+    background-color: #e3e0e0;
+    padding: 15px;
+    border-color: rgb(75, 99, 153);
+    border-style: dashed;
+    /*虚线 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(196 243 248);
+}
+ 
+#shiming2 img {
+    /*市名图片*/
+    border-radius: 5%;
+    /*边框弧度*/
+    width: 180px;
+    height: 180px;
+    float: right;
+    /*左浮动*/
+    margin: 5px 10px 0px 5px;
+}
+ 
+#shiming2 img:hover {
+    /*图片划过时*/
+    transform: scale(1.2);
+    /*图片放大*/
+}
+#shiming2 h3{
+    opacity: 0.9;
+}
+#shiming2 p {
+    /*市名文本设置*/
+    letter-spacing: 2px;
+    /*字体间隔*/
+    text-indent: 2em;
+    opacity: 0.7;
+}
+#zhutimain {
+    /*美食排行耪标题主体右边*/
+    width: 24%;
+    height: 400px;
+    background-color: rgb(227 224 224 / 90%);
+    float:left;
+    margin-right: 1%;
+
+}
+#zhutimain img {
+    /*中部图片设置*/
+    border-radius: 5px;
+    width: 281px;
+    height: 180px;
+    margin: 22px 0px 0px 0px;
+}
+
+#zhutiright {
+    /*美食排行耪标题主体右边*/
+    width: 24%;
+    height: 400px;
+    background-color: rgb(227 224 224 / 90%);
+    float:right;
+    margin-left: 1%;
+
+}
+
+#d1 {
+    /*美食排行耪标题主体右边*/
+    font-family: 黑体;
+    font-size: 100%;
+    color: white;
+    float:left;
+    background-color: rgb(222,184,135,0.9);
+    padding: 5px 5px;
+    margin: 4px;
+}
+ 
+#d2 {
+    /*美食排行耪内容设置*/
+    clear: both;
+}
+#zhutiright a {
+    /*列表超链接设置*/
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    text-indent: 2em;
+    padding: 10px 10px 0px 10px;
+}
+#zhutimain a {
+    /*列表超链接设置*/
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    line-height: 25px;
+    text-indent: 2em;
+    padding: 10px 10px 0px 10px;
+   
+}
+#zuihou{
+    width: 1200px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(227 224 224 / 90%);
+    line-height: 50px;
+    
+}

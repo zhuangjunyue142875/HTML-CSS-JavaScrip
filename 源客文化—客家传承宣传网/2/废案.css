@@ -1,0 +1,288 @@
+* {margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration: none;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+body { background-color: #f3f5f7;}
+ /* 版心 */
+.wrapper{ width: 1200px;
+margin: 0 auto;}
+/* 头部 */
+.header{ height:42px;
+ /* background-color:#bfbfbf; */
+margin-top: 30px;
+margin-bottom: 30px;}
+.header h1 a img{height: 42px;}
+/* 导航 */
+ h1 {float: left;}
+.nav {float: left;
+	 margin-left: 70px;
+	 height: 42px;
+	 /* background-color: green; */
+	 }
+.nav li{float: left;
+		margin-right: 26px;}
+
+.nav li a {height:42px;
+		   line-height: 42px;
+		   display: inline-block;
+		   padding: 0 9px;
+		   font-size: 18px;
+		   color: #050505;
+		   text-decoration:none;
+		   }
+
+.nav li a:hover{border-bottom: 2px solid #00a4ff;}
+  /* 搜索 */
+.search {width: 412px;
+		height: 40px;
+		 border:1px solid #00a4ff;
+		float: left;
+		margin-left: 59px;}
+
+.search input {float: left;
+			   width: 360px;
+			   height: 38px;
+			   border:0;
+			   padding-left: 20px;
+			}
+
+.image-button {float: left;
+			  position: relative;
+			  border: none;
+			  padding: 0;
+			  margin: 0;
+			  width: 40px;
+			  height: 39px;
+			  overflow: hidden;
+			  margin-left: 9px;}
+
+.image-button img {float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+	/* 控制placeholder的样式 */
+.search input::placeholder { font-size: 14px;
+							 color:#bfbfbf;}
+
+
+
+.user {
+	  float:right;
+	  margin-right: 35px;
+	  height:42px;
+	  line-height: 42px;
+
+	  }
+
+
+.user img {width: 50px;
+		   height: 40px;
+		   /* 调节图片对齐方式，垂直 */
+		   vertical-align: middle;}
+
+
+ /* 轮播图 */
+/* 设置整体大框架 */
+.overall{
+	/* 设置窗口大小 */
+	width: 900px;
+	height: 500px;
+	/* 将弹性 <div> 元素的所有项目的居中对齐 */
+	align-items: center;
+	/* 设置图片外边距 左右居中 上方5% */
+	margin: 5% auto;        
+}
+.content{
+	/* 设置相对定位 */
+	position: relative;
+	height: 400px;
+}
+.content ul{
+	/* 去除标签<ul><li></li></ul>默认加的样式 */
+	list-style-type: none;
+}
+.content ul>li{
+	width: 600px;
+	height: 300px;
+	/* 设置绝对定位 */
+	position: absolute;
+	/* 设置过度效果 时间为1s */
+	transition: 1s;
+	/* 设置最大透明度 默认一开始图片为透明的 当下面js加载的时候
+		第一张图片设置为不透明
+	*/
+	opacity: 0;
+}
+/* 设置每个图片的样式 */
+.content ul>li img{    
+	/* 设置每一张图片的大小 */
+	width: 900px;
+	height: 500px;
+	/* 设置圆角边框 */
+	border-radius: 5%;
+	/* 设置边框样式 */
+	border: 5px solid #0e0600;        
+}
+/* 设置轮播图下面的小点 */
+.content ol{
+	/* 设置相对定位 */
+	position: relative;
+	/* 设置网格布局 */
+	display: grid;
+	/* 设置网格布局中的列数及宽度 */
+	grid-template-columns: repeat(3, 75px);
+	/* 设置网格布局中的行数及宽度 */
+	grid-template-rows: auto;
+	/* 设置网格行与列之间的间隙 *//* 间隙为1em */
+	grid-gap: 1em;
+	gap:1em;
+	/* 右浮动 */
+	float: right;
+	/* 设置浮点的向上的内边距 */
+	margin-top: 450px;
+	/* 去除列表样式 */
+	list-style: none;
+	/* 把图像的上边缘设置在其包含元素上边缘之下0px高的位置 */
+	top: 0;
+	/* 把图像的左边缘设置在其包含元素上边缘之下0px高的位置 */
+	left: 0;
+}
+.content ol li{
+	/* 设置每个小点的大小 */
+	width: 25px;
+	height: 10px;
+	/* 设置里面的文字的大小 */
+	font-size: 15px;
+	/* line-height 属性设置行间的距离（行高） */
+	line-height: 20px;
+	/* 浮动左对齐 */
+	float: left;
+	/* 设置文本居中 */
+	text-align: center;
+	/* 把表格做成圆点 */
+	border-radius: 2em;
+	/* 设置圆点的边框 */
+	border: 5px solid #af9d9d;}
+/* 轮播图 */
+
+
+
+.banner .right{float:right;
+			   width: 228px;
+			   height: 300px;
+			   margin-top: 50px;
+			   background-color: #fff;}
+.banner .right h2{height:48px;
+				  background-color: #9bceea;
+				  text-align: center;
+				  line-height: 48px;
+				  font-size: 18px;
+				  color:#fff;}
+.banner .right .content{padding:0 18px;}
+.banner .right .content dl{padding:12px 0;
+						   border-bottom: 2px solid #e5e5e5;}
+.banner .right .content dt{font-size: 16px;
+							color:#4e4e4e;}
+.banner .right .content dd{font-size: 14px;
+							color:#4e4e4e;}
+.banner .right .more{display: block;
+					 width: 200px;
+					 height: 40px;
+					 border:1px solid #00a4ff;
+					 margin:4px 14px 4px 14px;
+					 text-decoration: none;
+					 text-align: center;
+					 line-height:40px;
+					 color:#00a4ff;
+					 }
+
+
+
+					 
+.goods{height:60px;
+   background-color: #fff;
+   margin-top: 8px;
+   box-shadow:0px 2px 3px 0px rgba(118,118,118,0.2);
+   line-height: 60px;
+   padding-left:34px;
+   padding-right:26px;
+   }
+.goods h2{float:left;
+	  font-size: 16px;
+	  color:#00a4ff;}
+.goods li{float:left;
+	  margin-left:34px;
+	  }
+.goods .xingqu{float:right;
+		   color:#00a4ff;}
+.goods li a{border-left:1px solid #bfbfbf;
+		padding-left: 34px;
+		color:#4e4e4e;}
+
+
+
+.box {margin-top: 35px;
+  }       
+.box .title{height:40px;}
+.box .title h2{float:left;
+		   font-size: 20px;
+		   color:#494949;
+		   font-weight: 400;}
+.box .title a{float:right;
+		  margin-right:30px;
+		  font-size:12px;
+		  color:#a5a5a5;}
+
+
+
+.box .contents li{float:left;
+			 width:228px;
+			  height:270px;
+			 margin-right:15px;
+			 margin-bottom:15px;}
+.box .contents li:nth-child(5n){margin:0;}
+.box .contents li img{width:228px;
+				  height:150px;} 
+.box .contents li h3{padding:20px;
+				font-size:14px;
+				color:#050505;}
+.box .contents li p{padding:0 20px;
+			   font-size:12px;
+			   color:#999;}
+.box .contents li span{color:#ff7c2d;}
+
+
+
+.footer{height:300px;
+	margin-top:40px;
+	background-color: #fff;
+	padding-top:30px;}
+.footer .left{float:left;}
+.footer .left p{margin:20px 0 10px;
+			font-size:12px;
+			color:#666;}
+.footer .right{float:right;}
+.footer .right dl{float:left;
+			  margin-left:120px;}
+			  .part4{width:100%; min-width:1200px; background:#fff; overflow:hidden}
+.part4 ul{ overflow:hidden;}
+.part4 ul li{background: #f8f8f8; padding: 25px 20px;cursor: pointer;margin-bottom: 60px;transition: all 0.5s;}
+.part4 ul li .newl{ float:left; width:900px; height:98px; overflow:hidden}
+.part4 ul li .newl a{color: #4c4c4c;font-size: 16px;font-weight: bold;overflow: hidden;width: 95%;display: block;margin-bottom: 15px;height: 25px;line-height: 25px;}
+.part4 ul li .newl .sub{font-size: 14px;color: #666666;line-height: 24px;width: 95%;max-height:50px;overflow: hidden;}
+.part4 ul li .newr{ float:right;border-left: 1px solid #cccccc; width:255px;height:98px; overflow:hidden;color: #e0e0e0;font-family: arial; background:url(../images/icon.png) center right no-repeat}
+.part4 ul li .newr span{font-size: 42px;display: block;line-height: 45px; text-align:right; padding-right:60px}
+.part4 ul li .newr time{font-size: 18px; text-align:right; display:block; padding-right:60px}
+.part4 ul li .newr img{height: auto;width: 225px;height: 98px;}
+.part4 ul li:hover{background: #81a849;}
+.part4 ul li:hover .newl a{ color:#fff}
+.part4 ul li:hover .newl .sub{color: #dee7d4;}
+.part4 ul li:hover .newr{border-left: 1px solid #9ab96d;background: url(../images/icon2.png) no-repeat right;color: #c6d7b3;}
+.part4 ul li:hover .newr span{ color:#fff}

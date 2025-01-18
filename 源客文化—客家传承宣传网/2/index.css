@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.w{
+    width: 1200px;
+    margin: auto;
+}
+body{
+    background-color: #fff;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display:table;
+}
+.clearfix::after{
+    clear:both;
+}
+body{
+background-color: rgb(255, 255, 255);
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部*/
+.header{
+    height: 42px;
+    background-color: rgb(255, 255, 255);
+    
+    margin: 30px auto;
+}
+h1{
+    float: left;
+}
+.nav{
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+    background-color:rgb(255, 255, 255);
+}
+.nav li{
+    float: left;
+    margin-right: 26px;
+}
+.nav li a{
+    height: 42px;
+    line-height: 42px;
+    display: block;
+    padding: 0 9px;
+    font-size: 18px;
+    color: black;
+    
+}
+.nav li a:hover{
+    border-bottom: 2px solid #00a4ff;
+}
+.search{
+    float: left;
+    margin-left: 59px;
+    width: 412px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+}
+.search input{
+    float: left;
+    padding-left: 20px;
+    width: 360px;
+    height: 38px;border:0;
+
+}
+.search input::placeholder{
+    font-size: 14px;
+    color:#bfbfbf;
+}
+.search button{
+    width: 50px;
+    height: 40px;
+    background-color: url(../2/原神.gif);
+    float: left;
+    border:0;
+}
+.user{
+    float:right;
+    margin-right: 35px;
+    height: 42px;
+    line-height: 42px;
+}
+.user img{
+    vertical-align: middle;
+}
+/* 定义一个图片轮播区域 */
+ul.slides{
+    position: relative;
+    width: 600px;
+    height: 280px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+/* 设置每个图片的从左往右弹性盒子排版以及水平垂直居中 */
+li.slide{
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-family: Helvetica;
+    font-size: 120px;
+    color: #fff; */
+    transition: .5s transform ease-in-out;
+}
+
+/* 为6个li添加背景图 */
+.slide:nth-of-type(1){
+    background:url(/HTML/1/大创1.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.slide:nth-of-type(2){
+    background:url(/HTML/1/大创2.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    left: 100%;
+}
+
+.slide:nth-of-type(3){
+    background:url(/HTML/1/大创3.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    left: 200%;
+}
+
+.slide:nth-of-type(4){
+    background:url(/HTML/1/大创4.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    left: 300%;
+}
+
+.slide:nth-of-type(5){
+    background:url(/HTML/1/大创5.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    left: 400%;
+}
+
+/* 设置按钮作为相对定位和覆盖图片区域 */
+input[type="radio"]{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+/* 设置与label相关联的按钮的位置 */
+.controls-visible{
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+
+/* 设置这一组6个label的排列方式并且设置它们的初始样式为白色带有白色边框(以便于选中的变化效果明显) */
+.controls-visible  label{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 5px;
+    border: 2px solid #fff;
+}
+/* 当点击label同时按钮被选中时，与之联动定位的label样式发生改变 */
+.slides input[type="radio"]:nth-of-type(1):checked~
+.controls-visible label:nth-of-type(1)
+{
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(2):checked~
+.controls-visible label:nth-of-type(2)
+{
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(3):checked~
+.controls-visible label:nth-of-type(3)
+{
+
+    background-color:#333;
+}
+.slides input[type="radio"]:nth-of-type(4):checked~
+.controls-visible label:nth-of-type(4)
+{
+    background-color: #333;
+}
+.slides input[type="radio"]:nth-of-type(5):checked~
+.controls-visible label:nth-of-type(5)
+{
+    background-color: #333;
+}
+/* 当按钮radio被选中时，后面的兄弟元素向左移动一个图片区域距离 */
+.slides input[type="radio"]:nth-of-type(1):checked~.slide{
+
+    transform: translateX(0%);
+
+}
+.slides input[type="radio"]:nth-of-type(2):checked~.slide{
+
+    transform: translateX(-100%);
+
+}
+.slides input[type="radio"]:nth-of-type(3):checked~.slide{
+
+    transform: translateX(-200%);
+
+}
+.slides input[type="radio"]:nth-of-type(4):checked~.slide{
+
+    transform: translateX(-300%);
+
+}
+.slides input[type="radio"]:nth-of-type(5):checked~.slide{
+
+    transform: translateX(-400%);
+
+}
+.buju{
+    background-color: rebeccapurple;
+    height: 420px;
+
+}
+.buju .tu{
+    height: 420px;
+    background-image: url(../美女3.jpg);
+}
+.buju .left{
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color:rgb(0, 0, 0,0.3);
+}
+.buju .left ul a{
+    font-size: 20px;
+    line-height:44px;
+    color: #fff;
+}
+.buju .left a:hover{
+    color: aqua;
+    
+}
+.buju .left span{
+    font-size: 20px;
+    margin-left: 80px;
+}
+.buju .right{
+    float: right;
+    margin-top: 50px;
+    width: 288px;
+    height: 300px;
+    background-color: #fff;
+}
+.buju .right h2{
+    background-color: #b3e8ee;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+}
+.buju .right div{
+    text-align: center;
+    padding: 12px 0;
+    border-bottom: 2px solid #dfdfdf;
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.buju .right div p{
+    font-size: 14px;
+    color: #4e4e4e;
+}
+.buju .right .more{
+    color: #00a4ff;
+    display: block;
+    margin: 4px auto 0;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #00a4ff;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.hezi{
+    border: 1px solid #ffffff;
+    width: 1200px;
+    height: 60px;
+    margin-top: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 3px 0px
+    rgba(118,118,118,0.2);
+}
+.hezi h2{
+    float: left;
+    margin-top: 13px;
+    color: aqua;
+    font-size: 20px;
+    padding: 0px 50px;
+}
+.hezi li{
+    float: left;
+    margin-top: 13px;
+    border-left : 1px solid #000;
+    
+}
+.hezi a{
+    padding: 20px 50px;
+}
+.hezi .xingqu{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-top: 12px;
+    float: right;
+    padding: right 20px;
+
+}
+.hezi .xingqu:hover{
+    color: aqua;
+}
+.box{
+    width: 1200px;
+    height: 60px;
+}
+.jptj{
+    font-size:  20px;
+    float: left;
+    margin-top: 30px;
+}
+.ckqb{
+    float: right;
+    margin-right: 20px;
+    margin-top: 37px;
+    font-size:  12px;
+    color: #4f4f4f;
+}
+.ckqb:hover{
+    color:aqua;
+}
+.kcnr li{
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: rgba(244, 227, 225, 0.516);
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.kcnr li:nth-child(6n){
+    margin-right: 0;
+}
+.kcnr li h3{
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+.kcnr li span{
+    color: red;
+    margin-left: 34px;
+    font-size: 15px;
+}
+.zh{
+    float: left;
+    width: 1500px;
+    height: 500px;
+    background-color: #ffffff;
+    margin-top: 40px;
+}
+.zh img{
+    margin-left: 200px;
+}
+.zh p{
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 10px;
+    color: pink;
+}
+.zhm{
+    float: right;
+}
+.zhm ul{
+    float: right;
+    margin-left: 120px;
+    margin-right: 50px;
+}

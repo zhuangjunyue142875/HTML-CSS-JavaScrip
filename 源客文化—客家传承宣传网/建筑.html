@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./民俗/风俗图片/背景图.png);
+        }
+        * { margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+            list-style:none;
+            text-decoration: none;
+            
+
+            }
+        .B{width:1200px;
+           height:50px;
+           background-color:rgb(255, 255, 255,0.9);
+           margin:0 auto;
+           text-align:center;
+
+        }
+        .B li{ margin-left:222px;
+               margin-top:10px;
+               font-family:宋体;
+               font-weight:1000;
+               font-size:large;
+               }
+        .B li a{ width: 120px;
+                 height: 50px;
+                 text-align:center;
+                 line-height:50px;
+                 color:black;
+                 text-decoration: none;
+                 float:left;
+                 margin-left:15px;
+                 margin-right:15px;
+                 }
+        .B li a:hover{background-color: rgb(152, 248, 244);}
+        .C{ 
+            width:1200px;
+            margin:0 auto;
+           }
+        .C .leftup{width:800px;
+                   height:600px;
+                   float:left;
+                   background-color:rgb(255, 255, 255,0.7);
+                   
+                   }
+        .C .wenzi{  width:750px;
+                    height:500px; 
+                    background-color:#e3e0e0;
+                    margin-top:80px;
+                    margin-left:40px;
+                    padding-right:10px;
+                    padding-top:10px;
+                    padding-bottom:10px;
+                    border-color:rgb(75,99,153);
+                    border-radius:10px;
+                    border-style:dashed;
+                    
+        }
+        .C .rightup{width:400px;
+                    height:600px;
+                    margin:0 auto;
+                    text-align: center;
+                    float:left;
+                    background-color:rgb(255, 255, 255,0.7);
+                    }
+        .C .down{width:1200px;
+                 height:880px;
+                 background-color:rgb(255, 255, 255,0.7);
+                 float:left;
+                 }
+        .C .bottom{width:1200px;
+                   height:50px;
+                   background-color:rgb(255, 255, 255,0.7);
+                   float:left;}
+        .C .biaoti{ width:150px; 
+                    height:40px; 
+                    font-family:宋体;
+                    font-size:large;
+                    float:left;
+                    border: 2px solid #534d4d; /* 边框 */
+                    border-radius: 20% / 40%; /* 设置水平和垂直的圆角半径来创建椭圆形状 */
+                    text-align:center; /* 使文本在div中居中 */
+                    line-height:35px; /* 设置行高使文本垂直居中 */
+                    background-color:rgba(175, 218, 223, 0.7);/* 背景色 */
+                    margin-top:20px; 
+                    margin-left:40px;
+                    margin-bottom:10px;}
+
+        
+
+        .C .rightup img{margin-top:10px;}
+        .C .rightup img:hover{transform: scale(1.2);}
+
+
+        .C .leftup .wenzi h3{padding-left:15px;
+                             font-family:宋体;
+                             font-size:20px;
+                             color:rgb(94, 152, 152);}
+        .C .leftup .wenzi p{padding-left:2em;
+                            text-indent:2em;
+                            font-family:宋体;
+                            font-size:17px;}
+
+
+        .C .down .one{width:1200px;
+                      height:200px;
+                      margin-top:10px;
+                      margin-bottom:10px;
+                      border: 2px solid #f3baf2; /* 边框宽度、样式和颜色 */
+                      border-color:rgb(136, 212, 235);
+                      border-style:dashed;
+                      border-radius:10px; /* 边框圆角*/
+                      box-shadow: 0 0 10px rgb(195, 245, 250);
+                      background-color:rgb(255, 255, 255,0.7);
+                      }
+        .C .down .two{width:1200px;
+                      height:200px;
+                      margin-bottom:10px;
+                      border: 2px solid #f3baf2; /* 边框宽度、样式和颜色 */
+                      border-color:rgb(136, 212, 235);
+                      border-style:dashed;
+                      border-radius:10px; /* 边框圆角*/
+                      box-shadow: 0 0 10px rgb(195, 245, 250);
+                      background-color:rgb(255, 255, 255,0.7);
+                      }
+        .C .down .three{width:1200px;
+                       height:200px;
+                       margin-bottom:10px;
+                       border: 2px solid #f3baf2; /* 边框宽度、样式和颜色 */
+                       border-color:rgb(136, 212, 235);
+                       border-style:dashed;
+                       border-radius:10px; /* 边框圆角*/
+                       box-shadow: 0 0 10px rgb(195, 245, 250);
+                       background-color:rgb(255, 255, 255,0.7);
+                       }
+        .C .down .four{width:1200px;
+                      height:200px;
+                      margin-bottom:10px;
+                      border: 2px solid #f3baf2; /* 边框宽度、样式和颜色 */
+                      border-color:rgb(136, 212, 235);
+                      border-style:dashed;
+                      border-radius:10px; /* 边框圆角*/
+                      box-shadow: 0 0 10px rgb(195, 245, 250);
+                      background-color:rgb(255, 255, 255,0.7);
+                      }
+
+
+        .C .down .one img{margin:10px 10px;
+                           float:left;}
+        .C .down .oneother{background-color:#e3e0e0;
+                           float:left;
+                           margin:8px 8px;
+                           width:880px;
+                           height:180px;}
+        .C .down .oneother h3{padding-top:10px;
+                              padding-left:10px;
+                              color:rgb(89, 167, 141);}
+        .C .down .oneother p{padding-left:10px;
+                             padding-right:10px;
+                             font-family:宋体;
+                             text-indent:2em;}
+        
+
+
+        .C .down .two img{margin:10px 10px;
+                           float:right;}
+        .C .down .twoother{background-color:#e3e0e0;
+                           float:left;
+                           margin:8px 8px;
+                           width:880px;
+                           height:180px;}
+        .C .down .twoother h3{padding-top:10px;
+                              padding-left:10px;
+                              color:rgb(89, 167, 141);}
+        .C .down .twoother p{padding-left:10px;
+                             padding-right:10px;
+                             font-family:宋体;
+                             text-indent:2em;}
+
+
+        .C .down .three img{margin:10px 10px;
+                            float:left;}
+        .C .down .threeother{background-color:#e3e0e0;
+                            float:left;
+                            margin:8px 8px;
+                            width:880px;
+                            height:180px;}
+        .C .down .threeother h3{padding-top:10px;
+                              padding-left:10px;
+                              color:rgb(89, 167, 141);}
+        .C .down .threeother p{padding-left:10px;
+                             padding-right:10px;
+                             font-family:宋体;
+                             text-indent:2em;}
+        
+
+
+        .C .down .four img{margin:10px 10px;
+                           float:right;}
+        .C .down .fourother{background-color:#e3e0e0;
+                           float:left;
+                           margin:8px 8px;
+                           width:880px;
+                           height:180px;}
+        .C .down .fourother h3{padding-top:10px;
+                              padding-left:10px;
+                              color:rgb(89, 167, 141);}
+        .C .down .fourother p{padding-left:10px;
+                             padding-right:10px;
+                             font-family:宋体;
+                             text-indent:2em;}
+
+        .C .down img:hover{transform: scale(1.2);}
+
+
+
+        .C .bottom{background-color:rgb(255, 255, 255,0.7);}
+        .C .bottom h3{text-align: center;
+                      margin:0 auto;
+                      line-height:50px;
+                      color:rgb(135, 109, 79);
+                      font-family:宋体;
+                    }
+    </style>
+</head>
+<body>
+    <div class="B">
+            <ul>
+                <li><a href="" target=" _blank">客家标志建筑</a></li>
+                <li><a href="" target=" _blank">客家四角楼</a></li>
+                <li><a href="" target=" _blank">客家围龙屋</a></li>
+                <li><a href="" target=" _blank">客家桂山石楼</a></li>
+                <li><a href="" target=" _blank">客家土楼</a></li>
+            </ul>
+    </div>
+    <div class="C">
+        <div class="leftup">
+            <div class="biaoti">客家建筑介绍</div>
+            <div class="wenzi">
+                <h3>背景与特点</h3>
+                <p>河源市，位于广东省东北部，是一个以客家人为主要居住民族的地区。这里的客家建筑文化源远流长，特色鲜明，是客家文化的重要组成部分。客家建筑以其独特的风格、精湛的工艺和深厚的文化内涵，成为中华建筑文化宝库中的瑰宝。</p>
+                <h3>客家建筑风格</h3>
+                <p>河源市客家建筑以围龙屋、四角楼等为代表，充分展示了客家文化的独特魅力。围龙屋作为河源地区最具代表性的建筑形式，其外观造型独特，通常为长方形或方形，四面用土坯砌筑而成，屋顶覆盖青瓦，显得古朴而庄重。四角楼则以其独特的四角形结构和精致的木雕装饰而闻名，展现了客家匠人的高超技艺。这些建筑是客家人居住的家园，更是他们传承文化、凝聚族群精神的象征。</p>
+                <h3>建筑技艺与工艺</h3>
+                <p>河源市客家建筑在技艺和工艺方面有着独特之处。榫卯结构是客家建筑的核心技艺之一，通过木构件之间巧妙组合，实现了建筑的稳固与美观。客家建筑在雕刻、彩绘等方面也独具匠心，如四角楼的木雕装饰，以其细腻的线条和生动的形象，展现了客家匠人的精湛技艺。</p>
+                <h3>文化内涵与象征意义</h3>
+                <p>河源市客家建筑所体现的传统文化内涵和象征意义丰富而深刻。围龙屋作为客家人的居住场所，其布局和结构体现了客家人的家族观念和宗族制度。在围龙屋内，不同世代的家族成员各有自己的活动区域，同时也有共同使用的空间，这种布局有助于家族成员之间的互动和交流。四角楼则以其独特的造型和精美的装饰，展示了客家人的审美追求和文化自信。</p>
+                <h3>对现代建筑的影响与启示</h3>
+                <p>河源市客家建筑对现代建筑设计和城市规划产生了深远的影响与启示。首先，客家建筑注重与自然环境的和谐共生,现代建筑设计中强调的“绿色建筑”理念具有重要的借鉴意义。其次，客家建筑在技艺和工艺方面的精湛表现，为现代建筑设计提供了丰富的灵感来源。最后，客家建筑所承载的传统文化内涵和象征意义，为现代城市规划和文化建设提供了重要的参考。</p>
+            </div>
+        </div>
+        <div class="rightup">
+            <a href="./《建筑＋历史》视频/《建筑＋历史》视频/万绿湖.mp4"   target=" _blank"><img src="./图片/万绿湖.jpg" alt="" width="280px" height="180px"></a>
+            <a href="./《建筑＋历史》视频/《建筑＋历史》视频/鳄湖公园.mp4" target=" _blank"><img src="./图片/鳄湖公园.jpg" alt="" width="280px" height="180px"></a>
+            <a href="./《建筑＋历史》视频/《建筑＋历史》视频/太平古街.mp4" target=" _blank"><img src="./图片/太平古街.jpg" alt="" width="280px" height="180px"></a>
+        </div>
+        <div class="down">
+            <div class="one">
+                <a href="./《建筑＋历史》视频/《建筑＋历史》视频/四角楼.mp4" target=" _blank"><img src="./图片/四角楼.png" alt="" width="280" height="180"></a>
+                <div class="oneother">
+                    <h3>四角楼</h3>
+                    <p>客家四角楼是客家围屋的一种独特类型，主要分布在东江流域的河源、惠州、深圳等地区。四角楼以其独特的建筑风格和丰富的文化内涵，成为客家文化的重要象征。</p>
+                    <p>四角楼在建筑设计上别具一格，通常分为四幢（正座）和四杠（横屋），呈现出上下、左右对称的建筑风格。其结构完整，布局合理，具有普通客家民居的共同点，但又与之迥然不同。整幢建筑坚固而宏大，即使面临战乱也能保证内部的安宁与祥和。四角楼的墙壁厚实，由条形花岗石砌成,厚度可达80厘米,显示了其坚固的防御性。</p>
+                    <p>四角楼的建筑用料讲究，木雕、石雕精细，画工精巧。梁、柱、桁、檐上雕龙画凤，图案栩栩如生。同时，四角楼还融合了海洋文化元素，如骑楼风格，体现了客家文化的开放性和包容性。</p>
+                </div>
+            </div>
+            <div class="two">
+                <a href="./《建筑＋历史》视频/《建筑＋历史》视频/围龙屋.mp4" target=" _blank"><img src="./图片/(围龙屋).png" alt="" width="280" height="180"></a>
+                <div class="twoother">
+                    <h3>围龙屋</h3>
+                    <p>客家围龙屋是客家文化中最具代表性的传统建筑之一，以其独特的建筑形式和深厚的文化内涵而闻名。这种建筑通常采用半圆形或椭圆形的平面布局，前低后高，形似一条盘踞的龙，因此得名“围龙屋”。</p>
+                    <p>围龙屋通常由前院、堂屋、横屋、围屋和后院等组成，形成一个完整的封闭空间。其建筑风格古朴典雅，以土木结构为主，结合了客家人的智慧和传统工艺。围龙屋的墙体厚实，窗小且少，具有良好的防御功能，同时也体现了客家人对家族团结和安全的重视。</p>
+                    <p>其建筑风格、布局和装饰都反映了客家人的生活习俗、审美观念和社会伦理。在围龙屋中，客家人传承着祖辈的智慧和文化，维系着家族的团结和繁荣。因此，围龙屋不仅是客家人的居住场所，更是他们文化认同和精神寄托的重要载体。</p>
+                </div>
+            </div>
+            <div class="three">
+                <a href="./《建筑＋历史》视频/《建筑＋历史》视频/桂山石楼.mp4" target=" _blank"><img src="./图片/客家桂山石楼.png" alt="" width="280" height="180"></a>
+                <div class="threeother">
+                    <h3>桂山石楼</h3>
+                    <p>河源桂山石楼，位于广东省河源市紫金县龙窝镇桂山村，是一座具有深厚历史文化底蕴的客家围屋。始建于清乾隆年间，历经岁月洗礼，仍屹立不倒，成为当地的文化地标。</p>
+                    <p>桂山石楼,又名“长春楼”,拥有主楼、正屋及内外横屋等众多建筑,形成一座庞大的建筑群。其建筑用料考究,一、二层采用花岗岩石条砌筑,墙厚达1.5米，而三至六层则采用明朝规格火砖砌成，展现了传统客家建筑的独特魅力。石楼内部户户相连,设计巧妙,此外，桂山石楼具有较强的防御功能，每层楼都设有枪眼，以应对外敌入侵。</p>
+                    <p>作为河源市的文化瑰宝,桂山石楼不仅吸引了众多游客前来参观,还成为当地乡村振兴的重要力量。通过对其保护和开发,桂山石楼已成为紫金县的一张亮丽名片,展示着客家文化的独特魅力和深远历史。</p>
+                </div>
+            </div>
+            <div class="four">
+                <a href="./《建筑＋历史》视频/《建筑＋历史》视频/6客家土楼.mp4" target=" _blank"><img src="./图片/客家土楼.png" alt="" width="280" height="180"></a>
+                <div class="fourother">
+                    <h3>土楼</h3>
+                    <p>河源客家土楼，是广东省河源市地区独特的建筑瑰宝，承载着丰富的客家文化和历史记忆。这些土楼通常由夯土、石块和木材建造，外观呈现出浑厚而古朴的特质。楼体坚固耐用，历经风雨仍能保持其原始风貌，展现出客家人的勤劳与智慧。</p>
+                    <p>客家土楼多为圆形或方形，中心有宽敞的庭院，四周环绕着层层叠叠的房间，每一层都有回廊相连，形成了独特的居住空间。楼内布局合理，功能分区明确，既适宜居住，又具有良好的防御功能。</p>
+                    <p>走进客家土楼，仿佛能感受到浓厚的客家文化氛围。这些土楼不仅是客家人的居所，更是他们文化和精神的象征，凝聚着客家人的智慧、团结和勇气。河源客家土楼，以其独特的建筑风格和深厚的文化内涵，吸引着越来越多的人前来探寻和感受。</p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h3>欢迎来到源客文化平台</h3>
+        </div>
+    </div>
+
+
+</body>
+</html>
